@@ -32,20 +32,53 @@
         </nav>
     </header>
     <main class="mt-4">
-        <div class="row">
+        <h1>Contact us to book your appointment</h1>
+        <form id="bookingform" method="post" class="row">
             <div class="col">
-                <h2>Basic Groom</h2>
-                <img src="/images/dog-bath.jpg" alt="Dog Bath">
+                <h2>Customer Information</h2>
+                <fieldset>
+                    <div class="container mb-2">
+                        <label for="firstname">First Name:</label><br>
+                        <input type="text" name="firstname"><br>
+                    </div>
+                    <div class="container mb-2">
+                        <label for="lastname">Last Name:</label><br>
+                        <input type="text" name="lastname"><br>
+                    </div>
+                    <div class="container mb-2">
+                        <label for="petname">Pet's Name:</label><br>
+                        <input type="text" name="petname"><br>
+                    </div>
+                    <div class="container mb-2">
+                        <label for="email">Email:</label><br>
+                        <input type="email" name="email"><br>
+                    </div>
+                    <div class="container mb-2">
+                        <label for="phone">Phone:</label><br>
+                        <input type="tel" name="phone"><br>
+                    </div>
+                    <div class="container mb-2">
+                        <label for="date">Date:</label><br>
+                        <input type="date" name="date"><br>
+                    </div>
+                </fieldset>
             </div>
             <div class="col">
-                <h2>Full Groom</h2>
-                <img src="/images/dog-nail-trim.jpg" alt="Dog Bath">
+                <h2>Service Request</h2>
+                <fieldset>
+                    <legend>I would like the following service:</legend>
+
+                    <input type="radio" id="basicgroom" name="basicgroom" value="1" />
+                    <label for="basicgroom">Basic Groom</label><br />
+                
+                    <input type="radio" id="fullgroom" name="fullgroom" value="2" />
+                    <label for="fullgroom">Full Groom</label><br />
+                
+                    <input type="radio" id="pamperedgroom" name="pamperedgroom" value="3" />
+                    <label for="pamperedgroom">Pampered Groom</label>
+                </fieldset>
             </div>
-            <div class="col">
-                <h2>Pampered Groom</h2>
-                <img src="/images/dog-towel.jpg" alt="Dog Bath">
-            </div>
-        </div>
+        </form>
     </main>
     <footer class="text-center p-3 mt-4">
         <p>&copy; Copyright 2024. All Rights Reserved.</p>
