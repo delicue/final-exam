@@ -33,64 +33,69 @@
     </header>
     <main class="mt-4">
         <h1>Contact us to book your appointment</h1>
-        <form id="bookingform" method="post" class="row">
-            <div class="col">
-                <h2>Customer Information</h2>
-                <fieldset>
-                    <div class="container mb-2">
-                        <label for="firstname">First Name:</label><br>
-                        <input type="text" name="firstname"><br>
-                    </div>
-                    <div class="container mb-2">
-                        <label for="lastname">Last Name:</label><br>
-                        <input type="text" name="lastname"><br>
-                    </div>
-                    <div class="container mb-2">
-                        <label for="petname">Pet's Name:</label><br>
-                        <input type="text" name="petname"><br>
-                    </div>
-                    <div class="container mb-2">
-                        <label for="email">Email:</label><br>
-                        <input type="email" name="email"><br>
-                    </div>
-                    <div class="container mb-2">
-                        <label for="phone">Phone:</label><br>
-                        <input type="tel" name="phone"><br>
-                    </div>
-                    <div class="container mb-2">
-                        <label for="date">Date:</label><br>
-                        <input type="date" name="date"><br>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="col">
-                <h2>Service Request</h2>
-                <fieldset>
-                    <legend>I would like the following service:</legend>
+        <form id="bookingform" method="post">
+            <div class="row mx-auto">
+                <div class="col-sm">
+                    <h2>Customer Information</h2>
+                    <fieldset>
+                        <div class="container mb-2">
+                            <label for="firstname">First Name:</label><br>
+                            <input type="text" name="firstname"><br>
+                        </div>
+                        <div class="container mb-2">
+                            <label for="lastname">Last Name:</label><br>
+                            <input type="text" name="lastname"><br>
+                        </div>
+                        <div class="container mb-2">
+                            <label for="petname">Pet's Name:</label><br>
+                            <input type="text" name="petname"><br>
+                        </div>
+                        <div class="container mb-2">
+                            <label for="email">Email:</label><br>
+                            <input type="email" name="email"><br>
+                        </div>
+                        <div class="container mb-2">
+                            <label for="phone">Phone:</label><br>
+                            <input type="tel" name="phone"><br>
+                        </div>
+                        <div class="container mb-2">
+                            <label for="date">Date:</label><br>
+                            <input type="date" name="date"><br>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="col-sm">
+                    <h2>Service Request</h2>
+                    <fieldset>
+                        <legend>I would like the following service:</legend>
 
-                    <input type="radio" id="basicgroom" name="basicgroom" value="1" />
-                    <label for="basicgroom">Basic Groom</label><br />
-                
-                    <input type="radio" id="fullgroom" name="fullgroom" value="2" />
-                    <label for="fullgroom">Full Groom</label><br />
-                
-                    <input type="radio" id="pamperedgroom" name="pamperedgroom" value="3" />
-                    <label for="pamperedgroom">Pampered Groom</label><br>
-                </fieldset>
-                <div class="mt-4">
-                    <p>Preferred Groomer</p>
-                    <select id="groomer" name="groomer">
-                        <option value="nopreference">No Preference</option>
-                        <option value="sally">Sally</option>
-                        <option value="amanda">Amanda</option>
-                        <option value="josh">Josh</option>
-                        <option value="ron">Ron</option>
-                    </select>
+                        <input type="radio" id="basicgroom" name="basicgroom" value="1" />
+                        <label for="basicgroom">Basic Groom</label><br />
+                    
+                        <input type="radio" id="fullgroom" name="fullgroom" value="2" />
+                        <label for="fullgroom">Full Groom</label><br />
+                    
+                        <input type="radio" id="pamperedgroom" name="pamperedgroom" value="3" />
+                        <label for="pamperedgroom">Pampered Groom</label><br>
+                    </fieldset>
+                    <div class="mt-4">
+                        <p>Preferred Groomer</p>
+                        <select id="groomer" name="groomer">
+                            <option value="nopreference">No Preference</option>
+                            <option value="sally">Sally</option>
+                            <option value="amanda">Amanda</option>
+                            <option value="josh">Josh</option>
+                            <option value="ron">Ron</option>
+                        </select>
+                    </div>
+                    <div class="mt-4">
+                        <label for="requests">Special requests or instructions{</label><br>
+                        <textarea name="requests" id="requests"></textarea>
+                    </div>
                 </div>
-                <div class="mt-4">
-                    <label for="requests">Special requests or instructions{</label><br>
-                    <textarea name="requests" id="requests"></textarea>
-                </div>
+            </div>
+            <div class="mx-auto container text-center mb-4">
+                <input type="submit" value="Submit" class="btn btn-primary my-2">
             </div>
         </form>
     </main>
