@@ -56,3 +56,23 @@
     color: white;
     font-weight: bold;
 }
+
+thead {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: #234a95;
+}
+
+tr:nth-child(odd) {
+    background-color: #9cb6e7;
+}
+
+th {
+    background-color: #234a95;
+}
+
+th, td {
+    text-align: center;
+    padding: 1.5em 2em;
+}
