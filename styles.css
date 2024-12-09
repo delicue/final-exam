@@ -46,6 +46,11 @@
     }
 }
 
-nav, footer {
-    background-color: lightblue;
+#logo, footer {
+    background-color: #9cb6e7;
+    color: #234a95;
+    font-weight: bold;
+}
+#nav {
+    background-color: #234a95;
 }
