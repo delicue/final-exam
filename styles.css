@@ -45,3 +45,7 @@
         display: block;
     }
 }
+
+nav, footer {
+    background-color: lightblue;
+}
